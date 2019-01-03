@@ -187,10 +187,11 @@ public class SortingEfficienciesGUI extends javax.swing.JFrame {
                     .addComponent(rdb1000)
                     .addComponent(rdb5000))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblSortOrder)
-                    .addComponent(rdbAscending)
-                    .addComponent(lblResults))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(rdbAscending)
+                        .addComponent(lblResults)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
@@ -269,7 +270,7 @@ public class SortingEfficienciesGUI extends javax.swing.JFrame {
         quick(quickArr, 0, numbers.length - 1); //calls on the quick method and passes the numbers array, 0 (index of the first value of the array), and numbers.length - 1 (index of the  last value of the array) for the parameters
         dblFinish = System.currentTimeMillis(); //sets the dblFinish variable equal to the time in milliseconds = represents the end time of the method
         dblElapsed = dblFinish - dblStart; //sets dblElapsed variable as the differnce between the dblFinish and dblStart variables - represents how long the method ran for
-        results("Quick Sort", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Quick Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
+        results("QUICK SORT", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Quick Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
     }
     
     
@@ -318,7 +319,7 @@ public class SortingEfficienciesGUI extends javax.swing.JFrame {
         
         output(N, txtSorted); //calls on the output method and passes the N array and txtSorted text area for the parameters
         
-        results("Selection Sort", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Selection Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
+        results("SELECTION SORT", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Selection Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
     }
     
     /**
@@ -371,7 +372,7 @@ public class SortingEfficienciesGUI extends javax.swing.JFrame {
         dblFinish = System.currentTimeMillis(); //sets the dblFinish variable equal to the time in milliseconds = represents the end time of the method
         dblElapsed = dblFinish - dblStart; //sets dblElapsed variable as the differnce between the dblFinish and dblStart variables - represents how long the method ran for
         
-        results("Bubble Sort", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Bubble Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
+        results("BUBBLE SORT", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Bubble Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
     }
     
     /**
@@ -417,7 +418,7 @@ public class SortingEfficienciesGUI extends javax.swing.JFrame {
         dblFinish = System.currentTimeMillis(); //sets the dblFinish variable equal to the time in milliseconds = represents the end time of the method
         dblElapsed = dblFinish - dblStart; //sets dblElapsed variable as the differnce between the dblFinish and dblStart variables - represents how long the method ran for
         
-        results("Insertion Sort", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Insertion Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
+        results("INSERTION SORT", intLoop, intComparison, intShifted, dblElapsed); //calls on the results() method and passes "Insertion Sort", intLoop, intComparison, intShifted, and dblElapsed for the parameters
     }
     
     /**
